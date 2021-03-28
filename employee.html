@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Java Creators in Youtube channel </title>
+</head>
+<body>
+   <div align="center">
+   <br>
+   <table border="1">
+     <tr>
+       <td> ID   </td>
+       <td>First Name</td>
+       <td>Last Name</td>
+       <td>Age</td>
+      </tr>
+      <tr th:each="emp :${employees}">
+        <td th:text="emp :{emp.id}"></td>
+       <td th:text="emp :{emp.firstName}"></td>
+       <td th:text="emp :{emp.lastName}"></td>
+       <td th:text="emp :{emp.age}"></td>
+      
+      </tr>
+   </table>
+   
+   
+   </div>
+</body>
+</html>
+
